@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-const webserver = require('./utils/server.js')
+const server = require('./utils/server.js')
 
 // return static file if request is for index.html
 app.use(express.static('public'));
