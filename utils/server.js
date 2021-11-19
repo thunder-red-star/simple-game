@@ -1,9 +1,9 @@
 const socketio = require('socket.io');
-const events = require('./events.js');
 
 function runServer () {
+    const io = socketio();
     io.on('connection', (socket) => {
-        console.log('a user connected');
+        console.log('Client connected');
     });
 }
 

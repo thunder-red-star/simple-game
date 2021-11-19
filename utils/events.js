@@ -1,5 +1,9 @@
-const socketio = require('socket.io')(http);
+const socketio = require('socket.io');
 
 function connection (socket) {
-    console.log("Someone joined!")
+    console.log("Someone joined!");
+}
+
+module.exports = {
+    connection
 }
